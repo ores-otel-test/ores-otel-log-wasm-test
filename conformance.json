@@ -9,6 +9,10 @@
     "concurrency",
     "wasm-host"
   ],
+  "exactHeads": {
+    "canonical": "05f14768232b770dfc2bbe03f27b388f5a701c74",
+    "legacy": "05f14768232b770dfc2bbe03f27b388f5a701c74"
+  },
   "language": "wasm",
   "name": "ores-otel-log-wasm-test",
   "runtime": "wasmtime and browser WebAssembly",
@@ -16,7 +20,7 @@
     "ores-otel/ores.otel.log",
     "ORESoftware/next-loggers.ts"
   ],
-  "status": "planned",
+  "status": "created",
   "testCommand": "cargo test && wasm-tools validate target/wasm32-wasip2/release/*.wasm",
   "toolchain": "cargo, wasm-tools, wasmtime"
 }
