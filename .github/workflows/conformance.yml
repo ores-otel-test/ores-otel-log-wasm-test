@@ -51,5 +51,4 @@ jobs:
       - run: bash test.sh
         working-directory: source/sdk/wasm
       - name: Record exact source
-        run: printf '%s %s %s %s
-' ores-otel-log-wasm-test wasm "${{ matrix.role }}" "${{ matrix.ref }}"
+        run: echo ores-otel-log-wasm-test wasm "${{ matrix.role }}" "${{ matrix.ref }}"
