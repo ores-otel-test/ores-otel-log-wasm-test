@@ -1,15 +1,22 @@
 {
+  "capabilities": [
+    "record-schema",
+    "api-manifest",
+    "context-isolation",
+    "otel-explicit",
+    "no-monkey-patching",
+    "lifecycle",
+    "concurrency",
+    "wasm-host"
+  ],
   "language": "wasm",
-  "matrixVersion": "ores.otel.test-repository/v1",
   "name": "ores-otel-log-wasm-test",
-  "requireExactHeadChecks": true,
-  "requireNoMonkeyPatching": true,
   "runtime": "wasmtime and browser WebAssembly",
   "sources": [
     "ores-otel/ores.otel.log",
     "ORESoftware/next-loggers.ts"
   ],
-  "status": "seeded",
+  "status": "planned",
   "testCommand": "cargo test && wasm-tools validate target/wasm32-wasip2/release/*.wasm",
   "toolchain": "cargo, wasm-tools, wasmtime"
 }
